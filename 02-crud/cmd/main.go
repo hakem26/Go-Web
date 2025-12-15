@@ -13,7 +13,3 @@ func main() {
 
 	server.Run(":8080")
 }
-
-func GetUsers(context *gin.Context)  {
-	context.JSON(http.StatusOK, gin.H{"message": "Hello"})
-}

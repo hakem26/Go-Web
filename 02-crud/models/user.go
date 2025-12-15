@@ -8,3 +8,11 @@ type User struct {
 }
 
 var Users []User
+
+func (u *User) Save() {
+	Users = append(Users, *u)
+}
+
+func GetAllUsers() []User {
+	return Users
+}
